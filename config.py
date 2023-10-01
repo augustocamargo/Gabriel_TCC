@@ -13,9 +13,9 @@ class Config:
 
     # caminhos para os arquivos
     dataset_folder = "/content/data/"
-    train_csv = "metadata_treino3_novo.csv"
-    eval_csv = "metadata_eval3.csv"
-    test_csv = "metadata_teste3.csv"
+    train_csv = "../code/metadata_treino3_novo.csv"
+    eval_csv = "../code/metadata_eval3.csv"
+    test_csv = "../code/metadata_teste3.csv"
 
   # configurações para carregar os áudios e extrair espectrogramas
   class Audio:
