@@ -12,7 +12,7 @@ class Config:
     win_length = 4
 
     # caminhos para os arquivos
-    dataset_folder = "/home/gabrielrstan/CodigoNovo/codigo/Tinder/"
+    dataset_folder = "/content/data/"
     train_csv = "metadata_treino3_novo.csv"
     eval_csv = "metadata_eval3.csv"
     test_csv = "metadata_teste3.csv"
