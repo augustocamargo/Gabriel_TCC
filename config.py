@@ -13,9 +13,9 @@ class Config:
 
     # caminhos para os arquivos
     dataset_folder = "content/data/"
-    train_csv = "code/metadata_treino3_novo.csv"
-    eval_csv = "code/metadata_eval3.csv"
-    test_csv = "code/metadata_teste3.csv"
+    train_csv = "../code/metadata_treino3_novo.csv"
+    eval_csv = "../code/metadata_eval3.csv"
+    test_csv = "../code/metadata_teste3.csv"
 
   # configurações para carregar os áudios e extrair espectrogramas
   class Audio:
@@ -47,7 +47,7 @@ class Config:
   # configurações de treino
   class Train:
     # localização dos arquivos de log
-    log_path = "/home/gabrielrstan/CodigoNovo/codigo/checkpoints/4.0/4.6/4.6-MFCC"
+    log_path = "log/"
     # quando ativo, só vai carregar 2 áudios na memória e vai fazer um janelamento menor
     debug = False
     # tamanho do batch durante o treino
@@ -76,7 +76,7 @@ class Config:
 
   class Test:
     # localização dos arquivos de log para carregar o best checkpoint
-    log_path = "/home/gabrielrstan/CodigoNovo/codigo/checkpoints/4.0/4.6/4.6-MFCC/best_checkpoint.pt"
+    log_path = "content/log/best_checkpoint.pt"
     # tamanho do batch durante o teste
     batch_size = 15
     # número de instâncias trabalhando em parelelo quando o experimento roda na CPU
