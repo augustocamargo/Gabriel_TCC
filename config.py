@@ -47,7 +47,7 @@ class Config:
   # configurações de treino
   class Train:
     # localização dos arquivos de log
-    log_path = "log/"
+    log_path = "content/log/"
     # quando ativo, só vai carregar 2 áudios na memória e vai fazer um janelamento menor
     debug = False
     # tamanho do batch durante o treino

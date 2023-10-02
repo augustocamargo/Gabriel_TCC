@@ -31,9 +31,11 @@ class Main:
     criterion = torch.nn.MSELoss(reduction='sum')
 
     model.train() # para usar regularização
+    import time
     for epoch in range(Config.Train.epochs):
-      print("época", epoch)
-      print("~~~ TREINO ~~~")
+      print("\n### Época ###", epoch)
+      inicio = time.time()
+      print("\n~~~ TREINO ~~~")
       cost = 0
       preds = []
       targets = []
@@ -56,9 +58,11 @@ class Main:
       print("custo", mean_loss)
       '''for res in ["Saida Treino: {}  Alvo Treino: {}".format(x,y) for x,y in zip(preds,targets)] :
             print(res)'''
-      print("~~~ FIM TREINO ~~~\n")
+      print("\n~~~ FIM TREINO ~~~\n")
 
       self.validation(criterion, model, dataloader2, epoch, optimizer)
+      fim = time.time()
+      print("\n### Exec Time: ",fim-inicio, "###")
       if Config.Train.debug and epoch >= 100:
         break
     
