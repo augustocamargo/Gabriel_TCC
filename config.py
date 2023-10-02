@@ -58,7 +58,7 @@ class Config:
     # número de instâncias trabalhando em parelelo quando o experimento roda na CPU
     num_works = 12
     # número de épocas
-    epochs = 150
+    epochs = 10
     # taxa de aprendizado
     learning_rate = 1e-5
     # weight decay
